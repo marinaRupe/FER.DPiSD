@@ -3,18 +3,18 @@
 typedef char const* (*PTRFUN)();
 
 typedef struct {
-    char const* name;
     PTRFUN* vtable;
+    char const* name;
 } Animal;
 
 typedef struct {
-    char const* name;
     PTRFUN* vtable;
+    char const* name;
 } Dog;
 
 typedef struct {
-    char const* name;
     PTRFUN* vtable;
+    char const* name;
 } Cat;
 
 
@@ -72,7 +72,7 @@ void animalPrintMenu(Animal* animal) {
 
 Animal** createDogs(int n) {
     Animal** dogs = malloc (n * sizeof(Dog*));
-    static char str[10][10];  // hard coded !
+    static char str[10][10];
     for (int i = 0; i < n; i++) {
         sprintf(str[i], "Peso_%d", i + 1);
         Animal* d = createDog(str[i]);
@@ -122,7 +122,7 @@ void testAnimals(void){
     destroyDogs((Dog **)dogs, N);
 }
 
-int main1(void) {
+int main(void) {
     testAnimals();
     return 0;
 }

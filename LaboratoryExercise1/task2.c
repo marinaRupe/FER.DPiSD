@@ -114,7 +114,7 @@ Linear* Linear_Create(int lb, int ub, double a_coef, double b_coef) {
 
 // Main
 
-int main(void) {
+int main2(void) {
     Unary_Function* f1 = (Unary_Function*) Square_Create(-2, 2);
     Unary_Function_tabulate(f1);
     Unary_Function* f2 = (Unary_Function*) Linear_Create(-2, 2, 5, -2);
