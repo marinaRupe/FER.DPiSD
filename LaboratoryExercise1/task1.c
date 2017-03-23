@@ -34,7 +34,7 @@ void constructDog(Animal* dog, char const* name) {
 }
 
 Animal* createDog(char const* name) {
-    Animal* dog = malloc(sizeof(Dog));
+    Animal* dog = (Animal*) malloc(sizeof(Dog));
     constructDog(dog, name);
     return dog;
 }
@@ -56,7 +56,7 @@ void constructCat(Animal* cat, char const* name) {
 }
 
 Animal* createCat(char const* name) {
-    Animal* cat = malloc(sizeof(Cat));
+    Animal* cat = (Animal*) malloc(sizeof(Cat));
     constructCat(cat, name);
     return cat;
 }
@@ -71,7 +71,7 @@ void animalPrintMenu(Animal* animal) {
 }
 
 Animal** createDogs(int n) {
-    Animal** dogs = malloc (n * sizeof(Dog*));
+    Animal** dogs = (Animal**) malloc (n * sizeof(Dog*));
     static char str[10][10];
     for (int i = 0; i < n; i++) {
         sprintf(str[i], "Peso_%d", i + 1);
