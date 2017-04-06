@@ -110,6 +110,7 @@ void testAnimals(void){
     animalPrintGreeting(&p4);
     animalPrintMenu(&p4);
 
+    /*
     printf("\n");
 
     int N = 10;
@@ -120,9 +121,10 @@ void testAnimals(void){
         animalPrintMenu(dog);
     }
     destroyDogs((Dog **)dogs, N);
+     */
 }
 
-int main(void) {
+int main1(void) {
     testAnimals();
     return 0;
 }
