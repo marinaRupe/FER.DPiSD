@@ -5,6 +5,6 @@ public:
 public:
     void transaction () {
         myDatabase.getData();
-        // ...
+        if (data != 0) std::cout << "Received data from database: " << data << std::endl;
     }
 };

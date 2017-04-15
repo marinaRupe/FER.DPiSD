@@ -2,14 +2,9 @@
 #include "client2.hpp"
 
 int testClient2() {
-    MockDatabase* pdb = new MockDatabase();
-
-    //construct test object (dependency injection)
+    AbstractDatabase* pdb = new MockDatabase();
     Client2 client(*pdb);
-
     client.transaction();
-
-
     return 0;
 }
 
