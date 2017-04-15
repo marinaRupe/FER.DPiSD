@@ -7,3 +7,8 @@ Link to a course site: http://www.fer.unizg.hr/en/course/dpisd
 * written in C++ and C
 * dynamic polymorphism and inheritance in C++
 * translating C++ code to C and assembly to study its behaviour
+
+### 2nd laboratory exercise
+* written in C++ and Java
+* software design principles
+* strategy and observer design patterns
